@@ -1,3 +1,13 @@
+.btn {
+  border-radius: 25px;
+  border: 1px solid;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2rem;
+  width: 80%;
+  padding: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)

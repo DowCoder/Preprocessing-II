@@ -1,1 +1,20 @@
 // Mixins in here
+.btn-design(@radius:25px) {
+    border-radius: @radius;
+    border: 1px solid; 
+    background-color: @button-bg;
+    color: @white;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.btn-prop() {
+    width: 80%;
+    padding: 20px;
+}
+
+.btn {
+    .btn-design();
+    .btn-prop();
+}
