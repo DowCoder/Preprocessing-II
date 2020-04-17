@@ -5,8 +5,17 @@
   color: #FFFFFF;
   text-align: center;
   font-size: 2rem;
+  cursor: pointer;
   width: 80%;
   padding: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .btn {
+    padding: 6px;
+  }
+}
+.btn:hover {
+  color: #FFEBCD;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -195,11 +204,22 @@ img {
   margin: auto;
   justify-content: space-between;
 }
+@media only screen and (max-width: 500px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .navBar a {
   color: black;
   text-decoration: none;
   font-size: 1.5rem;
   margin-right: 1.5em;
+}
+@media only screen and (max-width: 500px) {
+  .navBar a {
+    width: 70%;
+  }
 }
 .footer {
   width: 100%;
@@ -212,15 +232,33 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .display {
+  display: flex;
+  flex-direction: column;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media only screen and (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    width: 200vw;
+    margin-left: 3%;
+    padding-top: 10px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-section .text-content {
+    padding-top: 22px;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
@@ -245,6 +283,12 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media only screen and (max-width: 500px) {
+  .home .content-destination {
+    margin-left: 4%;
+    width: 92vw;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -253,6 +297,15 @@ img {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    width: 249%;
+    align-items: center;
+    margin-left: -68%;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
@@ -265,8 +318,20 @@ img {
 header .bus {
   max-width: 800px;
   width: 100%;
-  margin-left: 563px;
+  margin-left: 29%;
+}
+@media only screen and (max-width: 500px) {
+  header .bus {
+    margin-left: 4%;
+    width: 91vw;
+    border-bottom: 2px dashed #C0C0C0;
+  }
 }
 header .bus h2 {
   padding-top: 2%;
+}
+@media only screen and (max-width: 500px) {
+  header .bus h2 {
+    margin-right: 20%;
+  }
 }

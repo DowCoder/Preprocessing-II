@@ -1,21 +1,40 @@
 .home {
 
+  .display {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+   @media @mobile {
+     .display();
+     width: 200vw;
+     margin-left: 3%;
+     padding-top: 10px;
+   }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+      @media @mobile {
+        padding-top: 22px;
+      }
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+     
 
       img {
         border-radius: 10px;
@@ -42,6 +61,11 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      margin-left: 4%;
+      width: 92vw;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -52,6 +76,14 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 249%;
+      align-items: center;
+      margin-left: -68%;
+    }
 
     .destination {
       width: 30%;
@@ -66,9 +98,22 @@
 header {
   .bus {
     .max-width();
-    margin-left: 563px;
-  }
-  .bus h2 {
-    padding-top: 2%;
+    margin-left: 29%;
+  
+    @media @mobile {
+      margin-left: 4%;
+      width: 91vw;
+      border-bottom: 2px dashed @silver;
+    }
+
+     h2 {
+      padding-top: 2%;
+    
+      @media @mobile {
+        
+        margin-right: 20%;
+      }
+    }
   }
 }
+
